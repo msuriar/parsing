@@ -1,10 +1,12 @@
 %{
 #include <stdio.h>
+#include "y.tab.h"
 %}
 
 %%
-n printf("North\n");
-e printf("East\n");
-s printf("South\n");
-w printf("West\n");
+n return NORTH;
+e return EAST;
+s return SOUTH;
+w return WEST;
+\n return END;
 %%
