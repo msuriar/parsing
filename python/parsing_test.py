@@ -12,8 +12,7 @@ class CharacterTest(unittest.TestCase):
         line = 0
         column = 0
         text = 'a'
-        c = parsing.Character(payload=payload, index=index, line=line,
-                              column=column, text=text)
+        c = parsing.Character(index=index, line=line, column=column, text=text)
         self.assertEqual(c.payload, payload)
         self.assertEqual(c.index, index)
         self.assertEqual(c.line, line)
